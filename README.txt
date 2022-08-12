@@ -1,0 +1,1 @@
+has the basic stuff installed. jest, cypres, bootstrap, uuid. should work out of the box
