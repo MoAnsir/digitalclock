@@ -28,9 +28,11 @@ function DigitalClock({ is24H }) {
   }, []);
 
   const ampm = hour >= 12 ? "PM" : "AM";
-  const twelveHour = hour % 12;
-  const tH = `${twelveHour}:${minutes}:${seconds} ${ampm}`;
-  const tfH = `${hour}:${minutes}:${seconds}`;
+  const hourFormat = hour % 12;
+  const minuteFormat = minutes < 10 ? "0" + minutes : minutes;
+  const secondFormat = seconds < 10 ? "0" + seconds : seconds;
+  const tH = `${hourFormat}:${minuteFormat}:${secondFormat} ${ampm}`;
+  const tfH = `${hour}:${minuteFormat}:${secondFormat}`;
 
   return (
     <>

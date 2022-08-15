@@ -7,24 +7,27 @@ input[type=checkbox]{
 label {
 	cursor: pointer;
 	text-indent: -9999px;
-	width: 200px;
-	height: 100px;
+	width: 60px;
+	height: 25px;
 	background: grey;
 	display: block;
-	border-radius: 100px;
+	border-radius: 50px;
 	position: relative;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 5px;
 }
 
 label:after {
 	content: '';
 	position: absolute;
-	top: 5px;
-	left: 5px;
-	width: 90px;
-	height: 90px;
+	top: 2px;
+	left: 2px;
+	width: 20px;
+	height: 20px;
 	background: #fff;
-	border-radius: 90px;
-	transition: 0.3s;
+	border-radius: 20px;
+	transition: 0.2s;
 }
 
 input:checked + label {
@@ -37,7 +40,7 @@ input:checked + label:after {
 }
 
 label:active:after {
-	width: 130px;
+	width: 20px;
 }
 
 /*centering*/
