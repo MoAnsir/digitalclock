@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 function ClockType({ is24H, stIs24H }) {
   return (
-    <>
+    <div className="clock__24h-switch">
       <p className="d-inline">12 hour</p>
       <div className="d-inline">
         <input
@@ -17,7 +17,7 @@ function ClockType({ is24H, stIs24H }) {
         <label for="switch">Toggle</label>
       </div>
       <p className="d-inline">24 hour</p>
-    </>
+    </div>
   );
 }
 

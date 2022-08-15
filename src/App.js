@@ -7,7 +7,7 @@ import { useState } from "react";
 function App() {
   const [is24H, stIs24H] = useState(true);
   return (
-    <div className="App">
+    <div className="App clock my-auto">
       <Day />
       <DigitalClock is24H={is24H} />
       <ClockType is24H={is24H} stIs24H={stIs24H} />

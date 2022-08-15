@@ -34,9 +34,22 @@ function DigitalClock({ is24H }) {
   const tH = `${hourFormat}:${minuteFormat}:${secondFormat} ${ampm}`;
   const tfH = `${hour}:${minuteFormat}:${secondFormat}`;
 
+  // const tH2 = () => (
+  //   <div className="clock__timer">
+  //     <div className="clock__timer--hour">
+  //       <div className="clock__timer--hour-1st"></div>
+  //       <div className="clock__timer--hour-2nd"></div>
+  //     </div>
+  //     <div className="clock__timer--colon">:</div>
+  //     <div className="clock__timer--min"></div>
+  //     <div className="clock__timer--colon">:</div>
+  //     <div className="clock__timer--sec"></div>
+  //   </div>
+  // );
+
   return (
     <>
-      <div className="clock__hour">{is24H ? tfH : tH}</div>
+      <div className="clock__timer">{is24H ? tfH : tH}</div>
     </>
   );
 }

@@ -1,4 +1,3 @@
-import { Row, Col, Button } from "react-bootstrap";
 import { useState, useEffect } from "react";
 
 function Day({}) {
@@ -13,7 +12,7 @@ function Day({}) {
 
   return (
     <>
-      <div className="clock__hour">{day}</div>
+      <div className="clock__day">{day}</div>
     </>
   );
 }
