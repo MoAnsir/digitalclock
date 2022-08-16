@@ -12,7 +12,9 @@ function Day({}) {
 
   return (
     <>
-      <div className="clock__day">{day}</div>
+      <div className="clock__day" data-testid="day">
+        {day}
+      </div>
     </>
   );
 }

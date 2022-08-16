@@ -49,7 +49,9 @@ function DigitalClock({ is24H }) {
 
   return (
     <>
-      <div className="clock__timer">{is24H ? tfH : tH}</div>
+      <div className="clock__timer" data-testid="timer">
+        {is24H ? tfH : tH}
+      </div>
     </>
   );
 }
