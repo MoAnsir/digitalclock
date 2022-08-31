@@ -1,4 +1,3 @@
-import { Row, Col, Button } from "react-bootstrap";
 import { useState, useEffect } from "react";
 
 function DigitalClock({ is24H }) {

@@ -33,8 +33,11 @@ describe("digital clock", () => {
   });
 
   it("change from 24h clock to 12h clock", () => {
+    const d = new Date();
+    const hour = d.getHours();
+    const ampm = hour >= 12 ? "PM" : "AM";
     cy.get(".clock__24h-switch input").should("exist");
     cy.get(".clock__24h-switch input").click({ force: true });
-    cy.get(".clock__timer").should("include.text", "PM");
+    cy.get(".clock__timer").should("include.text", ampm);
   });
 });
